@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="./assets/css/app.css">
+	<link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			background-color: #f7f7f7;
+		}
+
+		#app-header{
+			background: rgb(23, 34, 55);
+		}
+
+		#app-main-nav-brand{
+			margin-right: 100px;
+		}
+
+		#app-main-nav-search {
+			width: 650px;
+			border-top-right-radius: 0 !important;
+			border-bottom-right-radius: 0 !important;
+		}
+
+		#app-main-nav-btn {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			font-size: 24px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		#app-slider .carousel-item > img{
+			height: 350px;
+		}
+
+		#app-category{
+			width: 250px;
+			position: absolute;
+			top: 108px;
+			left: 48px;
+			height: 350px;
+			background-color: #fff;
+		}
+
+		#app-category .list-group .list-group-item:first-of-type{
+			border-radius: 0;
+		}
+
+		#app-category .list-group .list-group-item:last-of-type{
+			border-radius: 0;
+		}
+
+		#app-category .list-group-item{
+			padding: 0.4rem 1.25rem;
+			border: 0;
+
+		}
+
+		#app-category .list-group-item:hover{
+			text-decoration: none;
+			border-left: 3px solid rgb(23, 34, 55);
+		}
+
+		#mobile-nav > nav{
+			padding: 0;
+			justify-content: stretch;
+		}
+
+		#mobile-nav > nav > a{
+			width: 25%;
+			text-align: center;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			border-right: 1px solid #999;
+
+		}
+		#mobile-nav > nav > a:last-of-type{
+			border-left: 0;
+		}
+
+
+
+		 /* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+			#app-main-nav-brand{
+				margin-right: 0;
+				width: 100vw;
+			}
+
+			#app-main-nav-form{
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			#app-main-nav-search {
+				width: 80%;
+			}
+			#app-main-nav-btn {
+				
+			}
+
+			.carousel-item > img{
+				height: inherit !important;
+				width: 100%;
+			}
+
+
+		}
+
+		/* Small devices (portrait tablets and large phones, 800px and up) */
+		@media only screen and (max-width: 800px) {
+			#app-main-nav-right{
+				display: none !important;
+			}
+
+			#app-category{
+				display: none;
+			}
+
+			#mobile-nav{
+				display: block !important;
+			}
+		}
+
+		
+
+	</style>
+</head>
+<body>
+
+	<div id="app" class="container-fluid">
+		<section id="app-header" class="row">
+			<div id="app-top-nav" class="col-xs-12 col-md-12">
+				<div class="row">
+					<div class="col-md-5 col-xs-12 col-sm-3">
+						<p id="app-top-nav-heading" class="my-2 small text-light">Pakistan's Best Online Shopping Destination</p>
+					</div>
+					<div class="col-md-7 col-sm-9 d-none d-sm-block">
+						<nav class="my-2 small text-right text-light">
+							<a href="#" class="mx-2 text-light">Sell With Us</a> |
+							<a href="#" class="mx-2 text-light">Track Order</a> |
+							<a href="#" class="mx-2 text-light">Vendors</a> |
+							<a href="#" class="mx-2 text-light">Account</a> |
+							<a href="#" class="mx-2 text-light">About Us</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div id="app-main-nav" class="col-xs-12 col-md-12">
+				<nav class="navbar py-3">
+					<a id="app-main-nav-brand" class="navbar-brand text-light" href="#">eCommerce Website</a>
+					<form id="app-main-nav-form" class="form-inline mr-auto ">
+					    <input class="form-control" id="app-main-nav-search" type="search" placeholder="Search" aria-label="Search">
+					    <button class="btn btn-primary my-2 my-sm-0" id="app-main-nav-btn" type="submit"><i class="fas fa-search"></i></button>
+					</form>
+					<nav id="app-main-nav-right" class=" d-none d-md-block">
+						<a href="#" class="text-light mx-3"><i class="fas fa-shopping-cart pr-2"></i> Cart</a>
+						<a href="#" class="text-light mx-4"><i class="fas fa-user pr-2"></i> Sign in</a>
+					</nav>
+				</nav>
+			</div>
+		</section>
+		<section id="app-slider" class="row">
+			<div class="col-xs-12 col-md-12 px-0">
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+				    <ol class="carousel-indicators">
+				        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+				        <li data-target="#carousel" data-slide-to="1"></li>
+				        <li data-target="#carousel" data-slide-to="2"></li>
+				    </ol>
+				    <div class="carousel-inner">
+				        <div class="carousel-item active text-center" style="background-color: #221b68;">
+				            <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1dQDJieT2gK0jSZFvXXXnFXXa.jpg_1200x1200.jpg" alt="First slide">
+				        </div>
+				        <div class="carousel-item text-center" style="background-color: #8d8f94;">
+				            <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1kMJGhRr0gK0jSZFnXXbRRXXa.jpg_1200x1200Q100.jpg" alt="Second slide">
+				        </div>
+				        <div class="carousel-item text-center" style="background-color: #460b95;">
+				            <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1eS4GhHj1gK0jSZFuXXcrHpXa.jpg_1200x1200Q100.jpg" alt="Third slide">
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</section>
+		<section id="app-category">
+			<nav id="app-category-nav" class="list-group">
+				<a href="#" class="list-group-item small"><i class="fas fa-mobile pr-4" style="width:2px; color: #7b63b5;"></i> Mobile and Tablets</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-female pr-4" style="width:2px; color: #ff5e3e;"></i> Womans fashion</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-pills pr-4" style="width:2px; color: #1cc6f4;"></i> Pharmacy</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-male pr-4" style="width:2px; color: #26c453;"></i> Mens Fashion</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-ring pr-4" style="width:2px; color: #fbb634;"></i> Gold Plated</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-blender-phone pr-4" style="width:2px; color: #ff508d;"></i> Appliances</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-home pr-4" style="width:2px; color: #50cf96;"></i> Home and living</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-tv pr-4" style="width:2px; color: #ff5e3e;"></i> Computer and Gaming</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-camera pr-4" style="width:2px; color: #26c453;"></i> Camera</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-volume-up pr-4" style="width:2px; color: #fbb634;"></i> Home Audio and Theater</a>
+				<a href="#" class="list-group-item small"><i class="fas fa-folder-plus pr-4" style="width:2px; color: #7b63b5;"></i> More</a>
+			</nav>
+		</section>
+		<section id="mobile-nav" class="d-block d-md-none">
+			<nav class="navbar navbar-dark bg-dark fixed-bottom">
+				<a href="#" class="text-light small"><i class="fas fa-home"></i> Home</a>
+				<a href="#" class="text-light small"><i class="fas fa-key"></i> Account</a>
+				<a href="#" class="text-light small"><i class="fas fa-mobile"></i> Categories</a>
+				<a href="#" class="text-light small"><i class="fas fa-shopping-cart"></i> Cart</a>
+			</nav>
+		</section>
+	</div>
+
+	<script src="./assets/js/app.js"></script>
+</body>
+</html>
